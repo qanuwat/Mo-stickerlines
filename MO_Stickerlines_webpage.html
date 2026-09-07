@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MO Stickerlines | ข้อมูลสำหรับลูกค้า</title>
+<style>
+  :root{
+    --pink:#ff4fa3; --pink2:#ff8bc7; --purple:#8b4de8;
+    --blue:#55b8f5; --yellow:#ffd84d; --text:#5b315d;
+    --bg:#fff7fc; --card:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",sans-serif;
+    color:var(--text);background:
+      radial-gradient(circle at 10% 5%, #ffd8ee 0 8%, transparent 9%),
+      radial-gradient(circle at 90% 10%, #e4d8ff 0 7%, transparent 8%),
+      linear-gradient(180deg,#fff4fb,#fff9fd 45%,#fff2fa);
+  }
+  .wrap{max-width:720px;margin:auto;padding:14px}
+  .hero{
+    background:linear-gradient(135deg,#ff3d98,#ff77bd 55%,#9d55e9);
+    border-radius:26px;padding:24px 20px;color:white;text-align:center;
+    box-shadow:0 12px 30px #d97bbd55;position:relative;overflow:hidden;
+  }
+  .hero:after{content:"✦  ♡  ✧  ♡  ✦";position:absolute;inset:8px auto auto 15px;opacity:.45;font-size:24px}
+  .hero h1{margin:12px 0 5px;font-size:34px;letter-spacing:.5px}
+  .hero p{margin:0;font-size:15px;font-weight:600}
+  .notice{
+    margin:14px 0;padding:13px 15px;background:#fff;border:2px solid #ffd0e8;
+    border-radius:18px;text-align:center;font-size:14px;
+  }
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0}
+  .btn{
+    display:block;text-decoration:none;color:inherit;background:var(--card);border-radius:22px;
+    padding:18px 14px;min-height:112px;border:2px solid #f3d9eb;
+    box-shadow:0 6px 18px #c77eaa22;transition:.15s;
+  }
+  .btn:active{transform:scale(.98)}
+  .icon{font-size:35px;display:block;margin-bottom:7px}
+  .btn strong{font-size:17px;display:block}.btn small{display:block;margin-top:5px;opacity:.72}
+  .pink{background:linear-gradient(135deg,#fff,#ffe4f2);border-color:#ffb7d9}
+  .blue{background:linear-gradient(135deg,#fff,#e0f5ff);border-color:#b7e3fa}
+  .purple{background:linear-gradient(135deg,#fff,#eee4ff);border-color:#d4baff}
+  .yellow{background:linear-gradient(135deg,#fff,#fff2bd);border-color:#ffe07a}
+  .orange{background:linear-gradient(135deg,#fff,#ffe1bf);border-color:#ffc178}
+  .section{
+    background:#fff;border-radius:22px;padding:18px;margin:12px 0;
+    border:2px solid #f0d8e9;box-shadow:0 6px 18px #c77eaa1b;
+  }
+  .section h2{font-size:21px;margin:0 0 10px}.section p{margin:7px 0;line-height:1.65}
+  .price{
+    width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px;
+    background:#fff1f8
+  }
+  .price td{padding:10px;border-bottom:1px solid #f4d3e4}.price tr:last-child td{border:0}
+  .account{background:linear-gradient(135deg,#f1fff7,#fff);border-color:#bfead2}
+  .account .number{font-size:22px;font-weight:800;letter-spacing:1px}
+  .cta{
+    display:block;text-align:center;text-decoration:none;color:#fff;
+    background:linear-gradient(90deg,#ff3f9d,#9c50e8);padding:14px;border-radius:18px;
+    font-weight:800;margin-top:12px
+  }
+  .footer{text-align:center;padding:18px 5px 30px;font-size:13px;opacity:.65}
+  @media(max-width:460px){.grid{gap:9px}.btn{padding:15px 11px}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div style="font-size:42px">🎀 ✨ 💗 ✨ 🎀</div>
+    <h1>MO Stickerlines</h1>
+    <p>รวมข้อมูลสำคัญสำหรับลูกค้า • อัปเดตไว้ที่เดียว</p>
+  </header>
+
+  <div class="notice">💖 ข้อมูลหน้านี้จะอัปเดตเรื่อย ๆ ลูกค้ากดจากเมนู LINE ได้เลย ไม่ต้องตามหาโพสต์</div>
+
+  <div class="grid">
+    <a class="btn pink" href="#order"><span class="icon">📝</span><strong>ขั้นตอนสั่งซื้อ</strong><small>สั่งง่าย • ดูขั้นตอนได้ที่นี่</small></a>
+    <a class="btn blue" href="#bank"><span class="icon">🏦</span><strong>เลขบัญชี</strong><small>ตรวจสอบบัญชีก่อนโอน</small></a>
+    <a class="btn purple" href="#price"><span class="icon">🏷️</span><strong>ราคาสติกเกอร์</strong><small>ดูราคาอัปเดตล่าสุด</small></a>
+    <a class="btn yellow" href="#promo"><span class="icon">📣</span><strong>โปรโมชั่น</strong><small>โปรล่าสุดของร้าน</small></a>
+    <a class="btn orange" href="#problem"><span class="icon">📦</span><strong>ไม่ได้รับของขวัญ</strong><small>แจ้งปัญหา / ขอให้ตรวจสอบ</small></a>
+    <a class="btn pink" href="#social"><span class="icon">📷</span><strong>Instagram</strong><small>ดูผลงานและอัปเดต</small></a>
+  </div>
+
+  <section class="section" id="order">
+    <h2>📝 ขั้นตอนสั่งซื้อ</h2>
+    <p><b>1.</b> เลือกสติกเกอร์ที่ต้องการ</p>
+    <p><b>2.</b> แจ้งรายละเอียดให้ร้านตามช่องทางที่กำหนด</p>
+    <p><b>3.</b> ชำระเงินและส่งหลักฐาน</p>
+    <p><b>4.</b> รอรับของขวัญ / รอร้านยืนยันรายการ</p>
+    <a class="cta" href="https://line.me/">💬 ติดต่อร้านทาง LINE</a>
+  </section>
+
+  <section class="section account" id="bank">
+    <h2>🏦 เลขบัญชีสำหรับโอน</h2>
+    <p><b>ธนาคาร:</b> [ใส่ชื่อธนาคาร]</p>
+    <p><b>ชื่อบัญชี:</b> [ใส่ชื่อบัญชี]</p>
+    <p class="number">[XXX-X-XXXXX-X]</p>
+    <p>⚠️ กรุณาตรวจสอบชื่อบัญชีให้ตรงกับข้อมูลของร้านก่อนโอนทุกครั้ง</p>
+  </section>
+
+  <section class="section" id="price">
+    <h2>🏷️ ราคาสติกเกอร์</h2>
+    <table class="price">
+      <tr><td>แพ็กเกจ A</td><td><b>[ราคา]</b></td></tr>
+      <tr><td>แพ็กเกจ B</td><td><b>[ราคา]</b></td></tr>
+      <tr><td>แพ็กเกจ C</td><td><b>[ราคา]</b></td></tr>
+    </table>
+    <p>✨ ราคาหน้านี้สามารถแก้ไขได้โดยไม่ต้องเปลี่ยนลิงก์ใน Rich Menu</p>
+  </section>
+
+  <section class="section" id="promo">
+    <h2>📣 โปรโมชั่นล่าสุด</h2>
+    <p>🔥 <b>โปรประจำเดือน</b></p>
+    <p>[ใส่รายละเอียดโปรโมชั่น / รูปโปร / เงื่อนไข]</p>
+    <p>⏰ อัปเดตล่าสุด: [วันที่]</p>
+  </section>
+
+  <section class="section" id="problem">
+    <h2>📦 ไม่ได้รับของขวัญ / แจ้งปัญหา</h2>
+    <p>หากโอนเงินแล้วแต่ยังไม่ได้รับของขวัญ กรุณาเตรียม:</p>
+    <p>• ชื่อ / ID ลูกค้า<br>• วันที่และเวลาที่โอน<br>• สลิปการโอน<br>• รายละเอียดปัญหา</p>
+    <a class="cta" href="https://line.me/">💬 แจ้งปัญหากับร้าน</a>
+  </section>
+
+  <section class="section" id="social">
+    <h2>📷 Instagram</h2>
+    <p>ติดตามผลงานและอัปเดตของ MO Stickerlines</p>
+    <a class="cta" href="https://www.instagram.com/">📷 เปิด Instagram</a>
+  </section>
+
+  <div class="footer">MO Stickerlines • ขอบคุณที่อุดหนุน 💗<br>หน้านี้ออกแบบให้เปิดจาก LINE บนมือถือเป็นหลัก</div>
+</div>
+</body>
+</html>
